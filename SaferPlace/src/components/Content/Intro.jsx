@@ -5,6 +5,11 @@ import { messages } from "../../data/messages";
 
 function Introduction(){
 
+    return(
+        <>
+            
+        </>
+    )
    
 }
 
