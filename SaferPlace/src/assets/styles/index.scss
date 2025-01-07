@@ -1,0 +1,12 @@
+@use"./partials/flex";
+@use"./partials/theme";
+@use"./partials/utils";
+@use"./partials/variables";
+@use"./partials/fonts";
+
+body {
+    font-size: 15px;
+    line-height: 1.6;
+    font-family: var(--font-family);
+    background-color: rgb(235, 237, 221);
+  }

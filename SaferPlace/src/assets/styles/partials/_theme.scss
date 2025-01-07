@@ -1,0 +1,25 @@
+.container {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+  }
+  .calc {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+  }
+  .border {
+    border: 1px solid var(--font-2);
+  }
+  .parallax {
+    background-image: linear-gradient(301grad,rgb(235, 236, 254), rgb(101, 152, 241),rgba(119, 45, 238, 0.927) );
+  
+    min-height: 100px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
