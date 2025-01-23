@@ -1,0 +1,90 @@
+
+.container {
+    width: 100%;
+    max-width: 32rem;
+    margin: 0 auto;
+    padding: 1.5rem;
+  }
+  
+  .inputGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .label {
+    font-size: 0.875rem;
+    font-weight: 500;
+  }
+  
+  .textarea {
+    width: 100%;
+    height: 8rem;
+    padding: 0.75rem;
+    border: 1px solid #e5e7eb;
+    border-radius: 0.5rem;
+    resize: none;
+  
+    &:focus {
+      outline: none;
+      border-color: transparent;
+      box-shadow: 0 0 0 2px #3bf6dd;
+    }
+  }
+  
+  .buttonGroup {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .button {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  
+    &.textUpload {
+      background-color: #f6a23b;
+      &:hover {
+        background-color: #ebe825;
+      }
+    }
+  
+    &.audioUpload {
+      background-color: #5cf68a;
+      &:hover {
+        background-color: #3aeda8;
+      }
+    }
+  
+    &.playButton {
+      background-color: #10b981;
+      &:hover {
+        background-color: #059669;
+      }
+    }
+  }
+  
+  .hiddenInput {
+    display: none;
+  }
+  
+  .audioPlayer {
+    width: 100%;
+    margin-top: 1rem;
+  
+    &::-webkit-media-controls-panel {
+      background-color: #f3f4f6;
+    }
+  
+    &::-webkit-media-controls-play-button {
+      background-color: #10b981;
+      border-radius: 50%;
+    }
+  }

@@ -1,0 +1,130 @@
+.cardContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+  }
+  
+  .card {
+    background: white;
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    width: 100%;
+    max-width: 1200px;
+    min-height: 150px;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.5s ease-in-out;
+    position: relative;
+  }
+  
+  .visible {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  
+  .hidden {
+    opacity: 0;
+    
+    &.next {
+      transform: translateX(50px);
+    }
+    
+    &.prev {
+      transform: translateX(-50px);
+    }
+  }
+  
+  .title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin-bottom: 1rem;
+  }
+  
+  .content {
+    font-size: 1rem;
+    color: #4a4a4a;
+    line-height: 1.5;
+    flex-grow: 1;
+    margin-bottom: 1.5rem;
+  }
+  
+  .controls {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .controlButton {
+    background: none;
+    border: 1px solid #e0e0e0;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: #4a4a4a;
+  
+    &:hover {
+      background-color: #f5f5f5;
+      color: #f6ca3b;
+      border-color: #efe82e;
+    }
+  
+    &:focus {
+      outline: none;
+      box-shadow: 0 0 0 2px rgba(108, 245, 200, 0.2);
+    }
+  }
+  
+  .indicators {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+  
+  .indicator {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #e0e0e0;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+  
+    &:hover {
+      background-color: #bdbdbd;
+    }
+  
+    &.active {
+      background-color: #3bf673;
+      transform: scale(1.2);
+    }
+  }
+  
+  @media (max-width: 640px) {
+    .card {
+      padding: 1.5rem;
+      min-height: 180px;
+    }
+  
+    .title {
+      font-size: 1.25rem;
+    }
+  
+    .content {
+      font-size: 0.875rem;
+    }
+  
+    .controlButton {
+      width: 32px;
+      height: 32px;
+    }
+  }
