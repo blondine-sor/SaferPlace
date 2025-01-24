@@ -69,6 +69,12 @@
         background-color: #059669;
       }
     }
+    &.submitButton {
+      background-color: #22c55e;
+      &:hover {
+        background-color: #16a34a;
+      }
+    }
   }
   
   .hiddenInput {
@@ -87,4 +93,37 @@
       background-color: #10b981;
       border-radius: 50%;
     }
+  }
+
+  .submit_button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 15px;
+    background-color: #5cdb67;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    gap: 8px;
+  }
+  
+  .submit_button:hover {
+    background-color: #8fc795;
+  }
+  
+  .submit_button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(127, 238, 203, 0.283);
+  }
+  
+  .submit_button.disabled {
+    background-color: #9ca3af;
+    cursor: not-allowed;
+    opacity: 0.6;
+  }
+  
+  .submit-icon {
+    margin-right: 8px;
   }
